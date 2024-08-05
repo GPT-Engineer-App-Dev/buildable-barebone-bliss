@@ -1,17 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Navigation from '../components/Navigation';
 
 const Index = () => {
   const [inputValue, setInputValue] = useState('');
-
-  useEffect(() => {
-    // Simulate an error after the component has mounted
-    setTimeout(() => {
-      throw new Error("This is a test error");
-    }, 1000);
-  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
